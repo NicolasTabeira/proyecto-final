@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="./imagenes/ele-pestaña.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <header id="navegador">
+        <ul>
+            <li><a href="../index.html"><span style="color: gold">Inicio</span></a></li>
+            <li><a href="./roles.html" ><span style="color: gold">Roles</span></a></li>
+            <li><a href="./lineas.html"><span style="color: gold">Lineas</span></a></li>
+            <li><a href="./diccionario.html"><span style="color: gold">Diccionario</span></a></li>
+            <li><a href="./contacto.html"><span style="color: gold">Contacto</span></a></li>
+        </ul>
+        <h1> El ABC de League of Legends </h1>
+    </header>
+
+    
+    
+    <div id="contacto">
+        <div class="hijo__contacto titulo__contacto">
+            <h2>Contactanos!</h2>
+        </div>
+        <form class="formulario">
+            <legend>Aca te dejamos un espacio para que nos contactes en caso de que quieras hacernos algun comentario o quieras alguna ayuda especifica!</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+            <br>
+            <label for="invocador">Nombre de invocador</label>
+            <input type="text" id="invocador" placeholder="Ingresa tu N. de invocador" required>
+            <br>
+            <label for="mail">E-mail</label>
+            <input type="text" id="mail" placeholder="Ingresa tu mail" required>
+            <br>
+            <select name="Servidor" id="Servidor">
+                <option value="0" selected disabled>Selecciona tu servidor</option>
+                <option value="1">LAN</option>
+                <option value="2">LAS</option>
+                <option value="3">BR</option>
+            </select>
+            <br>
+            <div class="opciones">
+                Nivel de invocador:
+                <input type="radio" name="exp" value="1">Principiante
+                <input type="radio" name="exp" value="2">Intermedio
+                <input type="radio" name="exp" value="3">Experimentado
+                
+            </div>
+                
+            
+            <br>
+            <label for="comentario">Dejanos tu comentario</label>
+            <textarea name="" id="comentario" cols="30" rows="10"></textarea>
+            <br>
+            <div class="botones">
+            <input type="checkbox" name="recibir__noticias" id="recibir__noticias" value="1">Deseo recibir noticias en mi mail
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+            </div>
+    </form> 
+    </div>
+    
+    <footer> 
+        <h2>El ABC del LOL</h2>
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+        </ul>
+    </footer>
+</body>
+</html>
