@@ -9,6 +9,9 @@ body {
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+html, body {
+    height: 100%;
+}
 
 /* navegador */
 #navegador {
@@ -20,18 +23,29 @@ body {
     width: auto;
 }
 #navegador ul {
-    color: gold;
+    background-color: yellow;
+    background: linear-gradient(/* to right, */ gold 25%, red 75%);
     display: flex;
     justify-content: end;
     gap: 0.5%;
     list-style: none;
     font-size: 23px;
     padding: 0.25%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 h1 {
-    color: gold;
+    background-color: yellow;
+    background: linear-gradient(/* to right, */ red 25%, gold 75%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0.25%;
+    margin: auto auto 1%;
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -87,7 +101,7 @@ h1 {
 .titulo__roles {
     grid-column: 1/4;
     grid-row: 1/2;
-    margin: auto;
+    margin: 1% auto 1%;
     color: gold;
     height: 50px;
     width: 400px;
@@ -132,7 +146,7 @@ h1 {
 .titulo__lineas {
     grid-column: 1/4;
     grid-row: 1/2;
-    margin: auto;
+    margin: 1% auto 1%;
     color: gold;
     height: 50px;
     width: 400px;
@@ -152,7 +166,7 @@ h1 {
     color: whitesmoke;
     border: 2px solid gold;
     border-radius: 15px;
-    margin: auto;
+    margin: 1% auto 1%;
     text-align:left;
     line-height: 1.5;
 }
@@ -172,13 +186,14 @@ h1 {
     background-size: 100%;
     border: 2px solid gold;
     border-radius: 15px;
-    margin: 1% auto;
+    margin: 1% auto 1%;
     color: gold;
     height: auto;
     width: auto;
     text-align: center;
     justify-content: center;
     line-height: 1.5;
+    padding: 1%;
 }
 
 /* contacto */
@@ -223,7 +238,7 @@ legend {
     background-size: 100%;
     border: 2px solid gold;
     border-radius: 15px;
-    margin: auto;
+    margin: 1% auto 1%;
     color: gold;
     height: auto;
     width: auto;
@@ -258,6 +273,15 @@ footer ul {
     flex-direction: row;
     gap: 10px;
     margin: 1%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -80px; 
+}
+footer, .push {
+    height: 80px;
 }
 
 /* media queries */
