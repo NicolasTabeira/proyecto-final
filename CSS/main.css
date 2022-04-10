@@ -36,7 +36,7 @@ html, body {
 }
 h1 {
     background-color: yellow;
-    background: linear-gradient(/* to right, */ red 25%, gold 75%);
+    background: linear-gradient(red 25%, gold 75%);
     text-align: center;
     display: flex;
     flex-direction: column;
