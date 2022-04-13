@@ -14,25 +14,19 @@ html, body {
 }
 
 /* navegador */
-#navegador {
+.navbar {
     background-image: url(../imagenes/fondoNav.jpg);
-    background-size: 100%;
+    background-size: cover;
     border-bottom: 4px solid gold;
-    border-radius: 15px;
-    height: auto;
-    width: auto;
 }
-#navegador ul {
+.navbar ul {
     background-color: yellow;
-    background: linear-gradient(/* to right, */ gold 25%, red 75%);
-    display: flex;
-    justify-content: end;
-    gap: 0.5%;
-    list-style: none;
-    font-size: 23px;
-    padding: 0.25%;
+    background: linear-gradient( gold 25%, red 75%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+.collapse {
+    justify-content: end;
 }
 h1 {
     background-color: yellow;
@@ -41,8 +35,10 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0.25%;
-    margin: auto auto 1%;
+    margin: auto;
+    font-size: large;
     font-family: 'Press Start 2P', cursive;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -103,8 +99,8 @@ h1 {
     grid-row: 1/2;
     margin: 1% auto 1%;
     color: gold;
-    height: 50px;
-    width: 400px;
+    height: auto;
+    width: auto;
     text-align: center;
     justify-content: center;
 }
@@ -148,10 +144,11 @@ h1 {
     grid-row: 1/2;
     margin: 1% auto 1%;
     color: gold;
-    height: 50px;
-    width: 400px;
+    height: auto;
+    width: auto ;
     text-align: center;
     justify-content: center;
+    padding: 1%
 }
 
 /* diccionario */
@@ -160,40 +157,41 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr ;
 }
-.tabla {
+.tabla__diccionario {
     background-image: url(../imagenes/fondoTablajpg.jpg);
     background-size: 100%;
     color: whitesmoke;
     border: 2px solid gold;
-    border-radius: 15px;
-    margin: 1% auto 1%;
+    margin: 1% auto ;
     text-align:left;
     line-height: 1.5;
 }
-.tabla td {
-    padding: 10px;
+.tabla__diccionario td {
+    padding: 10px;    
+    border: 2px solid gold;
 }
-.tabla ol {
+.tabla__diccionario ol {
     text-align: center;
     list-style: none;
 }
-.tabla ul {
+.tabla__diccionario ul {
     text-align: center;
     list-style: none;
 }
 .titulo__diccionario {
+    display: flex;
     background-image: url(../imagenes/fondoTablajpg.jpg);
     background-size: 100%;
     border: 2px solid gold;
     border-radius: 15px;
-    margin: 1% auto 1%;
+    margin: 2% 20% 1%;
     color: gold;
     height: auto;
     width: auto;
     text-align: center;
     justify-content: center;
     line-height: 1.5;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 /* contacto */
