@@ -304,18 +304,19 @@ footer, .push {
         display: flex;
         flex-direction: column;
         width: auto;
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5%;
+            width: auto;
+            padding: 10px;
+        }
+        .opciones {
+            display: flex;
+            flex-direction: column;
+        }
     }
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5%;
-        width: auto;
-        padding: 10px;
-    }
-    .opciones {
-        display: flex;
-        flex-direction: column;
-    }
+    
     #diccionario {
         margin: 1%;
     }

@@ -325,14 +325,14 @@ footer, .push {
     flex-direction: column;
     width: auto;
   }
-  .formulario {
+  #contacto .formulario {
     display: flex;
     flex-direction: column;
     margin: 0.5%;
     width: auto;
     padding: 10px;
   }
-  .opciones {
+  #contacto .opciones {
     display: flex;
     flex-direction: column;
   }
