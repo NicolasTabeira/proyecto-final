@@ -66,7 +66,7 @@ h1 {
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 50%;
         height: auto;
         justify-content: space-between;
         gap: 10px;
@@ -288,7 +288,7 @@ footer, .push {
 }
 
 /* media queries */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     #navegador {
         font-size: small;
         width: 100%;
@@ -335,13 +335,17 @@ footer, .push {
     #inicio {
         width: auto;
         margin: 1%;
+        .txt {
+            width: auto;
+        }
     }
-    .txt {
-        width: auto;
-    }
+    
     footer {
         font-size: small;
         width: 100%;
         padding: 10px;
+        h2 {
+            font-size: large;
+        }
     }
 }
