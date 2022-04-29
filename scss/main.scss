@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body {
     background-image: url(../imagenes/fondoPagina2.jpg) ;
     background-size: cover;
@@ -13,6 +14,22 @@ body {
 }
 html, body {
     height: 100%;
+}
+/* map */
+$botones: (
+    display: flex,
+    flex-direction: row,
+    margin: auto,
+);
+
+/* mixin */
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+/* extend */
+%gradiente {
+    background: linear-gradient(red 25%, gold 75%);
 }
 
 /* navegador */
@@ -23,8 +40,8 @@ html, body {
     border-bottom: 4px solid gold;
 }
 .navbar ul {
+    @extend %gradiente;
     background-color: yellow;
-    background: linear-gradient( gold 25%, red 75%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -32,11 +49,10 @@ html, body {
     justify-content: end;
 }
 h1 {
+    @include flex-column;
+    @extend %gradiente;
     background-color: yellow;
-    background: linear-gradient(red 25%, gold 75%);
     text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 0.26%;
     margin: auto;
@@ -49,8 +65,7 @@ h1 {
 
 /* contenido de pagina inicio */
 #inicio {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     margin: 1%;
     line-height: 1.5;
@@ -58,14 +73,13 @@ h1 {
         text-align: center;
     }
     .txt {
+        @include flex-column;
         background-image: url(../imagenes/fondoTablajpg.jpg);
         background-size: cover;
         color: $textColor;
         padding: 3%;
         border: $borderStyle;
         border-radius: 15px;
-        display: flex;
-        flex-direction: column;
         width: 50%;
         height: auto;
         justify-content: space-between;
@@ -80,9 +94,8 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.25fr 1fr 1fr 0.25fr;
     .hijo__roles {
+        @include flex-column;
         background-image: url(../imagenes/fondoTablajpg.jpg);
-        display: flex;
-        flex-direction: column;
         background-size: cover;
         margin: 1%;
         border: $borderStyle ;
@@ -119,10 +132,9 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.25fr 1fr 1fr;
     .card__lineas {
+        @include flex-column;
         background-image: url(../imagenes/fondoTablajpg.jpg);
         background-size: 100%;
-        display: flex;
-        flex-direction: column;
         background-size: cover;
         border: $borderStyle;
         border-radius: 15px;
@@ -203,10 +215,9 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.15fr 1fr ;
     .formulario {
+        @include flex-column;
         background-image: url(../imagenes/fondoTablajpg.jpg);
         background-size: cover;
-        display: flex;
-        flex-direction: column;
         color: whitesmoke;
         border: $borderStyle;
         border-radius: 15px;
@@ -228,18 +239,18 @@ h1 {
         gap: 10px;
     }
     .botones {
-        display: flex;
-        flex-direction: row;
+        display: map-get($map: $botones, $key: display );
+        flex-direction: map-get($map: $botones, $key: flex-direction );
         gap: 5px;
         justify-items: center;
-        margin: auto;
+        margin: map-get($map: $botones, $key: margin );
     }
     .titulo__contacto {
         background-image: url(../imagenes/fondoTablajpg.jpg);
         background-size: 100%;
         border: $borderStyle;
         border-radius: 15px;
-        margin: 1% auto 1%;
+        margin: 1% auto;
         color: $textColor;
         height: auto;
         width: auto;

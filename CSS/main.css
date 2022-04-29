@@ -16,6 +16,13 @@ html, body {
   height: 100%;
 }
 
+/* map */
+/* mixin */
+/* extend */
+.navbar ul, h1 {
+  background: linear-gradient(red 25%, gold 75%);
+}
+
 /* navegador */
 .navbar {
   background-image: url(../imagenes/fondoNav.jpg);
@@ -26,7 +33,6 @@ html, body {
 
 .navbar ul {
   background-color: yellow;
-  background: linear-gradient(gold 25%, red 75%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -36,11 +42,10 @@ html, body {
 }
 
 h1 {
-  background-color: yellow;
-  background: linear-gradient(red 25%, gold 75%);
-  text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: yellow;
+  text-align: center;
   align-items: center;
   padding: 0.26%;
   margin: auto;
@@ -64,14 +69,14 @@ h1 {
 }
 
 #inicio .txt {
+  display: flex;
+  flex-direction: column;
   background-image: url(../imagenes/fondoTablajpg.jpg);
   background-size: cover;
   color: gold;
   padding: 3%;
   border: 2px solid gold;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   width: 50%;
   height: auto;
   justify-content: space-between;
@@ -86,9 +91,9 @@ h1 {
 }
 
 #roles .hijo__roles {
-  background-image: url(../imagenes/fondoTablajpg.jpg);
   display: flex;
   flex-direction: column;
+  background-image: url(../imagenes/fondoTablajpg.jpg);
   background-size: cover;
   margin: 1%;
   border: 2px solid gold;
@@ -129,10 +134,10 @@ h1 {
 }
 
 #lineas .card__lineas {
-  background-image: url(../imagenes/fondoTablajpg.jpg);
-  background-size: 100%;
   display: flex;
   flex-direction: column;
+  background-image: url(../imagenes/fondoTablajpg.jpg);
+  background-size: 100%;
   background-size: cover;
   border: 2px solid gold;
   border-radius: 15px;
@@ -217,10 +222,10 @@ h1 {
 }
 
 #contacto .formulario {
-  background-image: url(../imagenes/fondoTablajpg.jpg);
-  background-size: cover;
   display: flex;
   flex-direction: column;
+  background-image: url(../imagenes/fondoTablajpg.jpg);
+  background-size: cover;
   color: whitesmoke;
   border: 2px solid gold;
   border-radius: 15px;
@@ -257,7 +262,7 @@ h1 {
   background-size: 100%;
   border: 2px solid gold;
   border-radius: 15px;
-  margin: 1% auto 1%;
+  margin: 1% auto;
   color: gold;
   height: auto;
   width: auto;
